@@ -1,4 +1,4 @@
-# Chirpy
+# Chirper
 
 Learning Laravel & React from [Laravel Bootcamp](https://bootcamp.laravel.com).
 
@@ -7,13 +7,29 @@ Learning Laravel & React from [Laravel Bootcamp](https://bootcamp.laravel.com).
 ```sh
 brew install composer
 composer install
+cp .env.example .env
+```
+
+change db to sqlite
+
+```diff
+-DB_CONNECTION=mysql
++DB_CONNECTION=sqlite
+```
+
+create databalse
+
+```sh
 php artisan migrate
-npm install
 ```
 
 ## running local server
 
 ```sh
+php artisan key:generate
 php artisan serve
+npm install
 npm run dev
 ```
+
+open `http://localhost:8000`.
