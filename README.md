@@ -10,13 +10,6 @@ composer install
 cp .env.example .env
 ```
 
-change db to sqlite
-
-```diff
--DB_CONNECTION=mysql
-+DB_CONNECTION=sqlite
-```
-
 create databalse
 
 ```sh
