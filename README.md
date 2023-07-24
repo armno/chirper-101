@@ -26,3 +26,10 @@ npm run dev
 ```
 
 open `http://localhost:8000`.
+
+### other useful commands
+
+```sh
+php artisan route:list
+composer dump-autoload
+```
